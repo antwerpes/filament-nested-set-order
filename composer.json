@@ -1,0 +1,53 @@
+{
+    "name": "antwerpes/filament-nested-set-order",
+    "description": "Filament plugin for ordering resources stored using the nested set model",
+    "keywords": [
+        "antwerpes",
+        "laravel",
+        "nestedset",
+        "filament",
+        "filament-nested-set-order"
+    ],
+    "homepage": "https://github.com/antwerpes/filament-nested-set-order",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elisha Witte",
+            "email": "opensource@antwerpes.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^2.10",
+        "illuminate/contracts": "^8.0|^9.0",
+        "kalnoy/nestedset": "^6.0.0",
+        "spatie/laravel-package-tools": "^1.14.0"
+    },
+    "require-dev": {
+        "chiiya/laravel-code-style": "^1.7",
+        "orchestra/testbench": "^6.0|^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Antwerpes\\FilamentNestedSetOrder\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp": true,
+            "pestphp/pest-plugin": false
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Antwerpes\\FilamentNestedSetOrder\\FilamentNestedSetOrderServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

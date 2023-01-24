@@ -5,7 +5,7 @@ namespace Antwerpes\FilamentNestedSetOrder;
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class FilamentNestedsetOrderServiceProvider extends PluginServiceProvider
+class FilamentNestedSetOrderServiceProvider extends PluginServiceProvider
 {
     public function configurePackage(Package $package): void
     {

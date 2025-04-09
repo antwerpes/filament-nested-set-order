@@ -11,7 +11,7 @@ class NestedSetOrderActions
     {
         return [
             Action::make('up')
-                ->icon('heroicon-s-arrow-circle-up')
+                ->icon('heroicon-s-arrow-up-circle')
                 ->iconButton()
                 ->action(fn ($record) => $record->moveOrderUp())
                 ->visible(function ($record) {
@@ -25,7 +25,7 @@ class NestedSetOrderActions
                     return $record->id !== $first?->id;
                 }),
             Action::make('down')
-                ->icon('heroicon-s-arrow-circle-down')
+                ->icon('heroicon-s-arrow-down-circle')
                 ->iconButton()
                 ->action(fn ($record) => $record->moveOrderDown())
                 ->visible(function ($record) {

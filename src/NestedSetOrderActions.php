@@ -2,7 +2,7 @@
 
 namespace Antwerpes\FilamentNestedSetOrder;
 
-use Filament\Tables\Actions\Action;
+use Filament\Actions\Action;
 use Illuminate\Support\Facades\Cache;
 
 class NestedSetOrderActions
